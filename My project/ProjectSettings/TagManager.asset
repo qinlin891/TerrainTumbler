@@ -6,6 +6,7 @@ TagManager:
   tags:
   - shard
   - Trap
+  - Flagpole
   layers:
   - Default
   - TransparentFX
