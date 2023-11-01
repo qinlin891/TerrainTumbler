@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInputHandler : MonoBehaviour
 {
     Movement movement;
+    
 
     void Awake() {
         movement = GetComponent<Movement>();
