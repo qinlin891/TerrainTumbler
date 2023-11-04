@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4065096291794306523}
   - component: {fileID: 6055514224464460855}
   - component: {fileID: 5359829309491356379}
+  - component: {fileID: 6915690271720635292}
   m_Layer: 0
   m_Name: seaurchin
   m_TagString: Trap
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.4202566, y: 3.8347306, z: 0.05223365}
-  m_LocalScale: {x: 2.71, y: 2.71, z: 2.71}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -141,3 +142,15 @@ PolygonCollider2D:
       - {x: 0.29988098, y: 0.28857177}
       - {x: 0.09976196, y: 0.29922673}
   m_UseDelaunayMesh: 0
+--- !u!114 &6915690271720635292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690038715350253323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb307c360287e4a348be14c6b5633274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
