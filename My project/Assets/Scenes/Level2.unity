@@ -195,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 36492395}
   m_Layer: 0
-  m_Name: MovingTrap (1)
+  m_Name: MovingTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,15 +209,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36492394}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.4, y: 4.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.369743, y: -0.30526972, z: 0.05223365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1274815791}
   - {fileID: 629858308}
   - {fileID: 1491421144}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 900224288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &45202433
 PrefabInstance:
@@ -965,7 +965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 368611130}
   m_Layer: 0
-  m_Name: MovingTrap (3)
+  m_Name: MovingTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,15 +979,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368611129}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.85, y: -1.14, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 89.81974, y: -6.1452694, z: 0.05223365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2112497186}
   - {fileID: 225707266}
   - {fileID: 893139150}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 900224288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &376652060
 PrefabInstance:
@@ -1312,7 +1312,7 @@ Transform:
   m_GameObject: {fileID: 438144203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 123.5, y: 7.14, z: 0}
+  m_LocalPosition: {x: 123.14, y: 7.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2122,7 +2122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 750448611}
   m_Layer: 0
-  m_Name: MovingTrap (2)
+  m_Name: MovingTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2136,15 +2136,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750448610}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 95.59, y: -5.32, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 77.55974, y: -10.32527, z: 0.05223365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2039673158}
   - {fileID: 1432690407}
   - {fileID: 2014597353}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 900224288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &794686364
 GameObject:
@@ -2334,15 +2334,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844564103}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.030256, y: -5.0052695, z: 0.05223365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1994504308}
   - {fileID: 1984943892}
   - {fileID: 1289541093}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 900224288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &893139149
 GameObject:
@@ -2411,6 +2411,10 @@ Transform:
   - {fileID: 354373633}
   - {fileID: 1744662647}
   - {fileID: 241820467}
+  - {fileID: 844564104}
+  - {fileID: 36492395}
+  - {fileID: 750448611}
+  - {fileID: 368611130}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &906546386
@@ -9892,7 +9896,3 @@ SceneRoots:
   - {fileID: 525141224}
   - {fileID: 1929840972}
   - {fileID: 588925013}
-  - {fileID: 844564104}
-  - {fileID: 36492395}
-  - {fileID: 750448611}
-  - {fileID: 368611130}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class expand : MonoBehaviour
 {
-    Vector3 targetScale = new Vector3(5, 5, 5); // Change this to the desired target scale.
+    Vector3 targetScale = new Vector3(5.2f, 5.2f, 5.2f); // Change this to the desired target scale.
     float minChangeInterval = 3.0f; // Minimum change interval.
     float maxChangeInterval = 5.0f; // Maximum change interval.
     float minReturnInterval = 1.0f; // Minimum return interval.
