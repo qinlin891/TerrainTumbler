@@ -7,6 +7,8 @@ TagManager:
   - shard
   - Trap
   - Flagpole
+  - Ice
+  - IcicleGround
   layers:
   - Default
   - TransparentFX

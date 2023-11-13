@@ -6,8 +6,9 @@ public class Movement : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator anim;
+    public static bool isIcy = false;
     SpriteRenderer sprite;
-    [SerializeField] float speed = 7f;
+    float speed = 8f;
     [SerializeField] float jumpForce = 5;
     [SerializeField] LayerMask groundMask;
 
@@ -33,7 +34,11 @@ public class Movement : MonoBehaviour
         } else if (mvec.x < 0) {
             sprite.flipX = true;
         } 
-
+        if(isIcy) {
+            speed = 1f;
+        } else {
+            speed = 8f;
+        }
         mvec *= speed;
         mvec.y = rb.velocity.y;
         rb.velocity = mvec;
@@ -49,7 +54,10 @@ public class Movement : MonoBehaviour
         } else if(rb.velocity.y > 0.1f) {
              anim.SetInteger("state", 2);
         }
-        rb.velocity = new Vector3(0,rb.velocity.y,0);
+        if(!isIcy){
+            rb.velocity = new Vector3(0,rb.velocity.y,0);
+        }
+
     }
 
     public void Jump() {
