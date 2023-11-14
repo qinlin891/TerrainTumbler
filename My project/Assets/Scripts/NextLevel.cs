@@ -12,8 +12,10 @@ public class NextLevel : MonoBehaviour
             if (currentLevelName == "Level1")
             {
                 SceneManager.LoadScene("Level2");
-            } else {
+            } else if (currentLevelName == "Level2") {
                 SceneManager.LoadScene("Level3");
+            } else {
+                SceneManager.LoadScene("GameComplete");
             }
         }
     }
