@@ -16,7 +16,6 @@ public class Timer : MonoBehaviour
         if (singleton == null)
         {
             singleton = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -36,6 +35,10 @@ public class Timer : MonoBehaviour
             timerText.text = seconds.ToString();
         }
         yield return null;
+    }
+
+    public int GetTime() {
+        return seconds;
     }
 
     public void PauseTimer() {

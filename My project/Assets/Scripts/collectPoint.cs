@@ -16,4 +16,8 @@ public class collectPoint : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
     }
+
+    public int GetPoint() {
+        return point;
+    }
 }

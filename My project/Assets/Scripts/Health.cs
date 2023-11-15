@@ -23,7 +23,8 @@ public class Health : MonoBehaviour
     public void hit() {
         health--;
         if(health == 0) {
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            int time = Timer.singleton.GetTime();
+            GameManager.singleton.UpdateTotalTime(time);
             gameover.SetActive(true);
             audio.Stop();
             health = 3;
