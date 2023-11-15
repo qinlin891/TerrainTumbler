@@ -6,7 +6,16 @@ using UnityEngine.SceneManagement;
 public class GameOverMenuHandler : MonoBehaviour
 {
     public void RestartGame() {
-        SceneManager.LoadScene("Level1");
+        string currentLevelName = SceneManager.GetActiveScene().name;
+        if (currentLevelName == "Level1")
+        {
+            SceneManager.LoadScene("Level1");
+        } else if (currentLevelName == "Level2") {
+            SceneManager.LoadScene("Level2");
+        } else {
+            SnowmanController.ClearSnowballPool();
+            SceneManager.LoadScene("Level3");
+        }
     }
 
     public void MainMenu() {

@@ -118,4 +118,16 @@ public class SnowmanController : MonoBehaviour
 
         snowball.SetActive(false);
     }
+
+    public static void ClearSnowballPool()
+    {
+        foreach (var snowball in snowballPool)
+        {
+            if (snowball != null)
+            {
+                Destroy(snowball);
+            }
+        }
+        snowballPool.Clear();
+    }
 }
