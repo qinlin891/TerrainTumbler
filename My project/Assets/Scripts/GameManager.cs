@@ -31,6 +31,10 @@ public class GameManager : MonoBehaviour
         return totalShards.ToString();
     }
 
+    public int GetTimeInSec() {
+        return totalTime;
+    }
+
     public string GetFormatTime()
     {
         int minutes = totalTime / 60;
