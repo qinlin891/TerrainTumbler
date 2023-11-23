@@ -7,6 +7,7 @@ public class DisplayStat : MonoBehaviour
 {
       [SerializeField] Text Time;
       [SerializeField] Text Shards;
+      [SerializeField] Text Score;
 
       private const string TOP_SCORES_KEY = "TopScores";
       private const int MAX_TOP_SCORES = 3;
@@ -19,7 +20,11 @@ public class DisplayStat : MonoBehaviour
       void Start() {
          Shards.text = "x " + GameManager.singleton.GetTotalShards();
          Time.text = "Time Used: " + GameManager.singleton.GetFormatTime();
-         AddScore(GameManager.singleton.GetTimeInSec());
+         int timeInSeconds = GameManager.singleton.GetTimeInSec();
+         int shardsCollected = int.Parse(GameManager.singleton.GetTotalShards());
+         int newScore = CalculateScore(timeInSeconds, shardsCollected);
+         Score.text = "Score: " + newScore.ToString();
+         AddScore(newScore);
       }
 
       public void AddScore(int newScore) {
@@ -55,5 +60,16 @@ public class DisplayStat : MonoBehaviour
          string scoresString = string.Join(",", topScores);
          PlayerPrefs.SetString(TOP_SCORES_KEY, scoresString);
          PlayerPrefs.Save();
+      }
+
+      private int CalculateScore(int timeInSeconds, int shardsCollected) {
+         float timeWeight = 0.7f; 
+         float shardsWeight = 0.3f;
+
+         float normalizedTime = Mathf.Clamp01(1.0f - timeInSeconds / 600.0f);
+         float normalizedShards = Mathf.Clamp01((float)shardsCollected / 31); 
+
+         float finalScore = (normalizedTime * timeWeight + normalizedShards * shardsWeight) * 1000.0f; // Adjust scaling as needed
+         return Mathf.RoundToInt(finalScore);
       }
 }

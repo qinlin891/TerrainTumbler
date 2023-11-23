@@ -36,22 +36,8 @@ public class ScoreMenuHandler : MonoBehaviour
             topScores.Add(0);
         }
 
-        score1.text = "#1: " + GetFormatTime(topScores[0]);
-        score2.text = "#2: " + GetFormatTime(topScores[1]);
-        score3.text = "#3: " + GetFormatTime(topScores[2]);
-    }
-
-    private string GetFormatTime(int totalTime)
-    {
-        int minutes = totalTime / 60;
-        int seconds = totalTime % 60;
-
-        if (minutes == 0){
-            return seconds + " seconds";
-        } else if (seconds == 0){
-            return minutes + " minutes";
-        } else {
-            return minutes + " minute" + (minutes > 1 ? "s" : "") + " and " + seconds + " seconds";
-        }
+        score1.text = "#1: " + topScores[0];
+        score2.text = "#2: " + topScores[1];
+        score3.text = "#3: " + topScores[2];
     }
 }
