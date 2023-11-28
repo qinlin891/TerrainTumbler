@@ -29,7 +29,7 @@ public class DisplayStat : MonoBehaviour
 
       public void AddScore(int newScore) {
          topScores.Add(newScore);
-         topScores.Sort((a, b) => b.CompareTo(a)); // Sort in descending order
+         topScores.Sort((a, b) => b.CompareTo(a));
 
          if (topScores.Count > MAX_TOP_SCORES)
          {
@@ -69,7 +69,7 @@ public class DisplayStat : MonoBehaviour
          float normalizedTime = Mathf.Clamp01(1.0f - timeInSeconds / 600.0f);
          float normalizedShards = Mathf.Clamp01((float)shardsCollected / 31); 
 
-         float finalScore = (normalizedTime * timeWeight + normalizedShards * shardsWeight) * 1000.0f; // Adjust scaling as needed
+         float finalScore = (normalizedTime * timeWeight + normalizedShards * shardsWeight) * 1000.0f; 
          return Mathf.RoundToInt(finalScore);
       }
 }

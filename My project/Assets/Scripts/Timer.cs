@@ -45,7 +45,7 @@ public class Timer : MonoBehaviour
         isPaused = true;
         if (timerCoroutine != null)
         {
-            StopCoroutine(timerCoroutine); // Stop the coroutine immediately
+            StopCoroutine(timerCoroutine);
         }
     }
 

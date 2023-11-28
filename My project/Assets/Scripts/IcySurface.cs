@@ -18,7 +18,6 @@ public class IcySurface : MonoBehaviour
         {
             Movement.isIcy = true;
             Rigidbody2D playerRigidbody = GetComponent<Rigidbody2D>();
-            // playerRigidbody.AddForce(Vector2.right * forceMagnitude, ForceMode2D.Impulse);
             Vector2 forceDirection = playerSpriteRenderer.flipX ? Vector2.left : Vector2.right;
             playerRigidbody.AddForce(forceDirection * forceMagnitude, ForceMode2D.Impulse);
         }
@@ -29,7 +28,6 @@ public class IcySurface : MonoBehaviour
         if (collision.gameObject.CompareTag("Ice"))
         {
             Movement.isIcy = false;
-            // Rest of your collision exit handling code...
         }
     }
 }

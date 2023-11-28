@@ -6,7 +6,7 @@ public class SnowmanController : MonoBehaviour
 {
     public GameObject snowballPrefab;
     public Transform playerTransform;
-    public float throwInterval = 0.5f; // Time delay between snowballs
+    public float throwInterval = 0.5f; 
 
     private float lastThrowTime;
     private bool playerInsideZone = false;

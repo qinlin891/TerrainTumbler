@@ -28,6 +28,7 @@ public class PauseMenuHandler : MonoBehaviour
     }
 
     public void Quit() {
+        GameManager.singleton.ResetGame();
         SceneManager.LoadScene("MainMenu");
     }
 }

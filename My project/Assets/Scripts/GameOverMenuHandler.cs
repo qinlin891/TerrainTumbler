@@ -23,6 +23,7 @@ public class GameOverMenuHandler : MonoBehaviour
         // if(currentLevelName == "Level3") {
         //     SnowmanController.ClearSnowballPool();
         // }
+        GameManager.singleton.ResetGame();
         SceneManager.LoadScene("MainMenu");
     }
 }
